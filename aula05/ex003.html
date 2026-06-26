@@ -18,6 +18,14 @@
           
             document.write(`seu nome tem ${nome.length} letras <br>`)
             document.write(`seu nome em maiusculos e  ${nome.toUpperCase()} `)
+
+            var x = 2
+
+            document.write(x.toLocaleString('pt-BR',{style:'currency',currency:'BRL'}))
+            document.write(`<br>`)
+           var y = window.prompt('Digite um numero')
+
+           document.write(Number(y).toLocaleString('pt-BR',{style:"currency",currency:'BRL'}))
         </script>
 </body>
 </html>

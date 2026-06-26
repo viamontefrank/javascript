@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            font: normal 2rem arial;
+            display: block;
+            margin: auto;
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        <p>interaja</p>
+    </div>
+ <!-- onclick="clicar()" onmouseenter="entrou()" onmouseout="sair()" -->
+    <script>
+    let azul = true;
+         const area = document.querySelector('#area')
+            area.addEventListener('click', clicar)
+            area.addEventListener('mouseenter', entrou)
+            area.addEventListener('mouseout', sair)
+        function clicar() {
+        
+          
+           if (azul) {
+                area.style.backgroundColor = 'blue'
+           }
+           else {
+            area.style.backgroundColor = 'red'
+           }
+           area.innerText = 'CULO' 
+           azul = !azul
+           
+        }
+
+        function entrou() {
+             
+             
+            area.style.backgroundColor = 'yellow'
+             area.innerText = 'ENTROU' 
+            area.style.color = 'black'
+        }
+
+        function sair() {
+               
+               
+            area.style.backgroundColor = 'brown'
+             area.innerText = 'SAIOUUU' 
+        }
+    </script>
+</body>
+</html>
