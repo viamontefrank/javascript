@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+</head>
+<body>
+    <h1>Sistema de Países</h1>
+    <p>em qual pais você nasceu? <input type="text" name="country" id="country"> <input type="button" value="verificar" onclick="country()"></p>
+    <p id="res">Resultado:</p>
+     
+
+    <script>
+        function country() {
+            var pais = document.getElementById('country').value
+            var res = document.getElementById('res')
+            if (pais == 'brasil') {
+                res.innerHTML = 'Resultado: brasileiro'
+            }
+            else {
+                res.innerHTML = 'Resultado: estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
